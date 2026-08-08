@@ -4,7 +4,7 @@
 
 Java binary for converting PDF files into SQL dump files for generating a relational database of course data.
 
-## madgrades-data
+## uw-madison-pdf-archive
 
 Repository and archive of PDFs published by UW Madison.
 
