@@ -24,6 +24,6 @@ Ruby on Rails backend for the website.
 
 Leveraging Docker Compose, this contains Docker configurations for running the Madgrades API and all necessary dependencies in containers.
 
-It also contains scripts to seed the database with fresh data if a new `madgrades-data` image is specified.
+It also contains scripts to seed the database with fresh data if a new `uw-madison-pdf-archive` image is specified.
 
 GitHub actions automatically deploy the changes to production. There is no staging branch.
