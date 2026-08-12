@@ -1,14 +1,14 @@
 # Madgrades Infrastructure Overview
 
-## madgrades-extractor
+## madgrades-extractor-legacy
 
 Java binary for converting PDF files into SQL dump files for generating a relational database of course data.
 
-## uw-madison-pdf-archive
+## madgrades-pdf-archive
 
 Repository and archive of PDFs published by UW Madison.
 
-GitHub actions automatically run the `madgrades-extractor` binary on these PDFs to create a Docker image which contains the SQL dump files.
+GitHub actions automatically run the `madgrades-extractor-legacy` binary on these PDFs to create a Docker image which contains the SQL dump files.
 
 ## madgrades.com
 
@@ -24,6 +24,6 @@ Ruby on Rails backend for the website.
 
 Leveraging Docker Compose, this contains Docker configurations for running the Madgrades API and all necessary dependencies in containers.
 
-It also contains scripts to seed the database with fresh data if a new `uw-madison-pdf-archive` image is specified.
+It also contains scripts to seed the database with fresh data if a new `madgrades-pdf-archive` image is specified.
 
 GitHub actions automatically deploy the changes to production. There is no staging branch.
